@@ -1,16 +1,16 @@
 # bottom_menu_navigation
 
-A new Flutter project.
+This project is for prototyping some basic bottom bar navigation using `riverpod`, `auto_route` and `freezed` combined with `BottomNavigationBar`.
 
-## Getting Started
+The application has 5 icons in a `BottomNavigationBar` that is to be present across all pages. Tapping one of the icons will take you to the corresponding page. There is a requirement that the theme of the page and the navigation bar changes from light to dark depending on which page you are on.
 
-This project is a starting point for a Flutter application.
+This means we need to keep track of the `pageState`, and we need to provide both the `AppRouter` and the `pageState` to the `BottomNavigationBar`.
 
-A few resources to get you started if this is your first Flutter project:
+![FeedPage](Screenshot%20-%20Feed.PNG)
+Format: ![RepoUrl](https://github.com/cvanvlack/BottomMenuNavigation/blob/main/Screenshot%20-%20Feed.PNG?raw=true)
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Current Issues
+
+- Despite setting the `pageState` to `feedPage` on initialization, the app is showing the wrong theme (light instead of dark).
+- pushing the buttons on the `BottomNavigationBar` doesn't replace the pages.
