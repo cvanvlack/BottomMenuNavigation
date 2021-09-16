@@ -7,10 +7,11 @@ The application has 5 icons in a `BottomNavigationBar` that is to be present acr
 This means we need to keep track of the `pageState`, and we need to provide both the `AppRouter` and the `pageState` to the `BottomNavigationBar`.
 
 ![FeedPage](Screenshot%20-%20Feed.PNG)
-Format: ![RepoUrl](https://github.com/cvanvlack/BottomMenuNavigation/blob/main/Screenshot%20-%20Feed.PNG?raw=true)
+![MessagesPage](Screenshot%20-%20Messages.PNG)
 
 
 ## Current Issues
 
 - Despite setting the `pageState` to `feedPage` on initialization, the app is showing the wrong theme (light instead of dark).
-- pushing the buttons on the `BottomNavigationBar` doesn't replace the pages.
+- pushing the buttons on the `BottomNavigationBar` doesn't replace the pages when calling `ref.read(appRouterProvider).replace()`
+- Not sure the appropriate way to listen/read to the `pageState` and then map to the corresponding button index.
