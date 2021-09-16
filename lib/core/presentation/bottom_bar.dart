@@ -15,8 +15,15 @@ class BottomBar extends ConsumerWidget {
     final bool isDarkTheme =
         ref.read(pageStateNotifierProvider.notifier).pageState ==
             const PageState.feedPage();
-
-    final int menuIndex = 0;
+    //TODO: Map the pagestate to the corresponding index in a better way
+    int menuIndex = 0;
+    ref.read(pageStateNotifierProvider.notifier).pageState.map(
+          feedPage: (_) => menuIndex = 0,
+          searchPage: (_) => menuIndex = 1,
+          buyPage: (_) => menuIndex = 2,
+          messagesPage: (_) => menuIndex = 3,
+          profilePage: (_) => menuIndex = 4,
+        );
 
     return BottomNavigationBar(
       iconSize: navigationIconSize,
