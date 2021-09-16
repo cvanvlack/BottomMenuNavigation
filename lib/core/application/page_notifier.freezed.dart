@@ -24,16 +24,16 @@ class _$PageStateTearOff {
     return const _SearchPage();
   }
 
+  _BuyPage buyPage() {
+    return const _BuyPage();
+  }
+
   _MessagesPage messagesPage() {
     return const _MessagesPage();
   }
 
   _ProfilePage profilePage() {
     return const _ProfilePage();
-  }
-
-  _BuyPage buyPage() {
-    return const _BuyPage();
   }
 }
 
@@ -46,18 +46,18 @@ mixin _$PageState {
   TResult when<TResult extends Object?>({
     required TResult Function() feedPage,
     required TResult Function() searchPage,
+    required TResult Function() buyPage,
     required TResult Function() messagesPage,
     required TResult Function() profilePage,
-    required TResult Function() buyPage,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? feedPage,
     TResult Function()? searchPage,
+    TResult Function()? buyPage,
     TResult Function()? messagesPage,
     TResult Function()? profilePage,
-    TResult Function()? buyPage,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -65,18 +65,18 @@ mixin _$PageState {
   TResult map<TResult extends Object?>({
     required TResult Function(_FeedPage value) feedPage,
     required TResult Function(_SearchPage value) searchPage,
+    required TResult Function(_BuyPage value) buyPage,
     required TResult Function(_MessagesPage value) messagesPage,
     required TResult Function(_ProfilePage value) profilePage,
-    required TResult Function(_BuyPage value) buyPage,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_FeedPage value)? feedPage,
     TResult Function(_SearchPage value)? searchPage,
+    TResult Function(_BuyPage value)? buyPage,
     TResult Function(_MessagesPage value)? messagesPage,
     TResult Function(_ProfilePage value)? profilePage,
-    TResult Function(_BuyPage value)? buyPage,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -136,9 +136,9 @@ class _$_FeedPage extends _FeedPage {
   TResult when<TResult extends Object?>({
     required TResult Function() feedPage,
     required TResult Function() searchPage,
+    required TResult Function() buyPage,
     required TResult Function() messagesPage,
     required TResult Function() profilePage,
-    required TResult Function() buyPage,
   }) {
     return feedPage();
   }
@@ -148,9 +148,9 @@ class _$_FeedPage extends _FeedPage {
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? feedPage,
     TResult Function()? searchPage,
+    TResult Function()? buyPage,
     TResult Function()? messagesPage,
     TResult Function()? profilePage,
-    TResult Function()? buyPage,
     required TResult orElse(),
   }) {
     if (feedPage != null) {
@@ -164,9 +164,9 @@ class _$_FeedPage extends _FeedPage {
   TResult map<TResult extends Object?>({
     required TResult Function(_FeedPage value) feedPage,
     required TResult Function(_SearchPage value) searchPage,
+    required TResult Function(_BuyPage value) buyPage,
     required TResult Function(_MessagesPage value) messagesPage,
     required TResult Function(_ProfilePage value) profilePage,
-    required TResult Function(_BuyPage value) buyPage,
   }) {
     return feedPage(this);
   }
@@ -176,9 +176,9 @@ class _$_FeedPage extends _FeedPage {
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_FeedPage value)? feedPage,
     TResult Function(_SearchPage value)? searchPage,
+    TResult Function(_BuyPage value)? buyPage,
     TResult Function(_MessagesPage value)? messagesPage,
     TResult Function(_ProfilePage value)? profilePage,
-    TResult Function(_BuyPage value)? buyPage,
     required TResult orElse(),
   }) {
     if (feedPage != null) {
@@ -234,9 +234,9 @@ class _$_SearchPage extends _SearchPage {
   TResult when<TResult extends Object?>({
     required TResult Function() feedPage,
     required TResult Function() searchPage,
+    required TResult Function() buyPage,
     required TResult Function() messagesPage,
     required TResult Function() profilePage,
-    required TResult Function() buyPage,
   }) {
     return searchPage();
   }
@@ -246,9 +246,9 @@ class _$_SearchPage extends _SearchPage {
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? feedPage,
     TResult Function()? searchPage,
+    TResult Function()? buyPage,
     TResult Function()? messagesPage,
     TResult Function()? profilePage,
-    TResult Function()? buyPage,
     required TResult orElse(),
   }) {
     if (searchPage != null) {
@@ -262,9 +262,9 @@ class _$_SearchPage extends _SearchPage {
   TResult map<TResult extends Object?>({
     required TResult Function(_FeedPage value) feedPage,
     required TResult Function(_SearchPage value) searchPage,
+    required TResult Function(_BuyPage value) buyPage,
     required TResult Function(_MessagesPage value) messagesPage,
     required TResult Function(_ProfilePage value) profilePage,
-    required TResult Function(_BuyPage value) buyPage,
   }) {
     return searchPage(this);
   }
@@ -274,9 +274,9 @@ class _$_SearchPage extends _SearchPage {
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_FeedPage value)? feedPage,
     TResult Function(_SearchPage value)? searchPage,
+    TResult Function(_BuyPage value)? buyPage,
     TResult Function(_MessagesPage value)? messagesPage,
     TResult Function(_ProfilePage value)? profilePage,
-    TResult Function(_BuyPage value)? buyPage,
     required TResult orElse(),
   }) {
     if (searchPage != null) {
@@ -289,6 +289,102 @@ class _$_SearchPage extends _SearchPage {
 abstract class _SearchPage extends PageState {
   const factory _SearchPage() = _$_SearchPage;
   const _SearchPage._() : super._();
+}
+
+/// @nodoc
+abstract class _$BuyPageCopyWith<$Res> {
+  factory _$BuyPageCopyWith(_BuyPage value, $Res Function(_BuyPage) then) =
+      __$BuyPageCopyWithImpl<$Res>;
+}
+
+/// @nodoc
+class __$BuyPageCopyWithImpl<$Res> extends _$PageStateCopyWithImpl<$Res>
+    implements _$BuyPageCopyWith<$Res> {
+  __$BuyPageCopyWithImpl(_BuyPage _value, $Res Function(_BuyPage) _then)
+      : super(_value, (v) => _then(v as _BuyPage));
+
+  @override
+  _BuyPage get _value => super._value as _BuyPage;
+}
+
+/// @nodoc
+
+class _$_BuyPage extends _BuyPage {
+  const _$_BuyPage() : super._();
+
+  @override
+  String toString() {
+    return 'PageState.buyPage()';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) || (other is _BuyPage);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() feedPage,
+    required TResult Function() searchPage,
+    required TResult Function() buyPage,
+    required TResult Function() messagesPage,
+    required TResult Function() profilePage,
+  }) {
+    return buyPage();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? feedPage,
+    TResult Function()? searchPage,
+    TResult Function()? buyPage,
+    TResult Function()? messagesPage,
+    TResult Function()? profilePage,
+    required TResult orElse(),
+  }) {
+    if (buyPage != null) {
+      return buyPage();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_FeedPage value) feedPage,
+    required TResult Function(_SearchPage value) searchPage,
+    required TResult Function(_BuyPage value) buyPage,
+    required TResult Function(_MessagesPage value) messagesPage,
+    required TResult Function(_ProfilePage value) profilePage,
+  }) {
+    return buyPage(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_FeedPage value)? feedPage,
+    TResult Function(_SearchPage value)? searchPage,
+    TResult Function(_BuyPage value)? buyPage,
+    TResult Function(_MessagesPage value)? messagesPage,
+    TResult Function(_ProfilePage value)? profilePage,
+    required TResult orElse(),
+  }) {
+    if (buyPage != null) {
+      return buyPage(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class _BuyPage extends PageState {
+  const factory _BuyPage() = _$_BuyPage;
+  const _BuyPage._() : super._();
 }
 
 /// @nodoc
@@ -332,9 +428,9 @@ class _$_MessagesPage extends _MessagesPage {
   TResult when<TResult extends Object?>({
     required TResult Function() feedPage,
     required TResult Function() searchPage,
+    required TResult Function() buyPage,
     required TResult Function() messagesPage,
     required TResult Function() profilePage,
-    required TResult Function() buyPage,
   }) {
     return messagesPage();
   }
@@ -344,9 +440,9 @@ class _$_MessagesPage extends _MessagesPage {
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? feedPage,
     TResult Function()? searchPage,
+    TResult Function()? buyPage,
     TResult Function()? messagesPage,
     TResult Function()? profilePage,
-    TResult Function()? buyPage,
     required TResult orElse(),
   }) {
     if (messagesPage != null) {
@@ -360,9 +456,9 @@ class _$_MessagesPage extends _MessagesPage {
   TResult map<TResult extends Object?>({
     required TResult Function(_FeedPage value) feedPage,
     required TResult Function(_SearchPage value) searchPage,
+    required TResult Function(_BuyPage value) buyPage,
     required TResult Function(_MessagesPage value) messagesPage,
     required TResult Function(_ProfilePage value) profilePage,
-    required TResult Function(_BuyPage value) buyPage,
   }) {
     return messagesPage(this);
   }
@@ -372,9 +468,9 @@ class _$_MessagesPage extends _MessagesPage {
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_FeedPage value)? feedPage,
     TResult Function(_SearchPage value)? searchPage,
+    TResult Function(_BuyPage value)? buyPage,
     TResult Function(_MessagesPage value)? messagesPage,
     TResult Function(_ProfilePage value)? profilePage,
-    TResult Function(_BuyPage value)? buyPage,
     required TResult orElse(),
   }) {
     if (messagesPage != null) {
@@ -430,9 +526,9 @@ class _$_ProfilePage extends _ProfilePage {
   TResult when<TResult extends Object?>({
     required TResult Function() feedPage,
     required TResult Function() searchPage,
+    required TResult Function() buyPage,
     required TResult Function() messagesPage,
     required TResult Function() profilePage,
-    required TResult Function() buyPage,
   }) {
     return profilePage();
   }
@@ -442,9 +538,9 @@ class _$_ProfilePage extends _ProfilePage {
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? feedPage,
     TResult Function()? searchPage,
+    TResult Function()? buyPage,
     TResult Function()? messagesPage,
     TResult Function()? profilePage,
-    TResult Function()? buyPage,
     required TResult orElse(),
   }) {
     if (profilePage != null) {
@@ -458,9 +554,9 @@ class _$_ProfilePage extends _ProfilePage {
   TResult map<TResult extends Object?>({
     required TResult Function(_FeedPage value) feedPage,
     required TResult Function(_SearchPage value) searchPage,
+    required TResult Function(_BuyPage value) buyPage,
     required TResult Function(_MessagesPage value) messagesPage,
     required TResult Function(_ProfilePage value) profilePage,
-    required TResult Function(_BuyPage value) buyPage,
   }) {
     return profilePage(this);
   }
@@ -470,9 +566,9 @@ class _$_ProfilePage extends _ProfilePage {
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_FeedPage value)? feedPage,
     TResult Function(_SearchPage value)? searchPage,
+    TResult Function(_BuyPage value)? buyPage,
     TResult Function(_MessagesPage value)? messagesPage,
     TResult Function(_ProfilePage value)? profilePage,
-    TResult Function(_BuyPage value)? buyPage,
     required TResult orElse(),
   }) {
     if (profilePage != null) {
@@ -485,100 +581,4 @@ class _$_ProfilePage extends _ProfilePage {
 abstract class _ProfilePage extends PageState {
   const factory _ProfilePage() = _$_ProfilePage;
   const _ProfilePage._() : super._();
-}
-
-/// @nodoc
-abstract class _$BuyPageCopyWith<$Res> {
-  factory _$BuyPageCopyWith(_BuyPage value, $Res Function(_BuyPage) then) =
-      __$BuyPageCopyWithImpl<$Res>;
-}
-
-/// @nodoc
-class __$BuyPageCopyWithImpl<$Res> extends _$PageStateCopyWithImpl<$Res>
-    implements _$BuyPageCopyWith<$Res> {
-  __$BuyPageCopyWithImpl(_BuyPage _value, $Res Function(_BuyPage) _then)
-      : super(_value, (v) => _then(v as _BuyPage));
-
-  @override
-  _BuyPage get _value => super._value as _BuyPage;
-}
-
-/// @nodoc
-
-class _$_BuyPage extends _BuyPage {
-  const _$_BuyPage() : super._();
-
-  @override
-  String toString() {
-    return 'PageState.buyPage()';
-  }
-
-  @override
-  bool operator ==(dynamic other) {
-    return identical(this, other) || (other is _BuyPage);
-  }
-
-  @override
-  int get hashCode => runtimeType.hashCode;
-
-  @override
-  @optionalTypeArgs
-  TResult when<TResult extends Object?>({
-    required TResult Function() feedPage,
-    required TResult Function() searchPage,
-    required TResult Function() messagesPage,
-    required TResult Function() profilePage,
-    required TResult Function() buyPage,
-  }) {
-    return buyPage();
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeWhen<TResult extends Object?>({
-    TResult Function()? feedPage,
-    TResult Function()? searchPage,
-    TResult Function()? messagesPage,
-    TResult Function()? profilePage,
-    TResult Function()? buyPage,
-    required TResult orElse(),
-  }) {
-    if (buyPage != null) {
-      return buyPage();
-    }
-    return orElse();
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult map<TResult extends Object?>({
-    required TResult Function(_FeedPage value) feedPage,
-    required TResult Function(_SearchPage value) searchPage,
-    required TResult Function(_MessagesPage value) messagesPage,
-    required TResult Function(_ProfilePage value) profilePage,
-    required TResult Function(_BuyPage value) buyPage,
-  }) {
-    return buyPage(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeMap<TResult extends Object?>({
-    TResult Function(_FeedPage value)? feedPage,
-    TResult Function(_SearchPage value)? searchPage,
-    TResult Function(_MessagesPage value)? messagesPage,
-    TResult Function(_ProfilePage value)? profilePage,
-    TResult Function(_BuyPage value)? buyPage,
-    required TResult orElse(),
-  }) {
-    if (buyPage != null) {
-      return buyPage(this);
-    }
-    return orElse();
-  }
-}
-
-abstract class _BuyPage extends PageState {
-  const factory _BuyPage() = _$_BuyPage;
-  const _BuyPage._() : super._();
 }

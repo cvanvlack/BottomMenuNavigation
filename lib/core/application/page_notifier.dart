@@ -8,9 +8,9 @@ class PageState with _$PageState {
   const PageState._();
   const factory PageState.feedPage() = _FeedPage;
   const factory PageState.searchPage() = _SearchPage;
+  const factory PageState.buyPage() = _BuyPage;
   const factory PageState.messagesPage() = _MessagesPage;
   const factory PageState.profilePage() = _ProfilePage;
-  const factory PageState.buyPage() = _BuyPage;
 }
 
 class PageNotifier extends StateNotifier<PageState> {
