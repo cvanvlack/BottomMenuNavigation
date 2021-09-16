@@ -13,15 +13,13 @@ final initializationProvider = FutureProvider<Unit>((ref) async {
 });
 
 class AppWidget extends ConsumerWidget {
-  final appRouter = AppRouter();
-
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     ref.listen(initializationProvider, (_) {});
     return MaterialApp.router(
       title: 'Perfect Gift',
-      routerDelegate: appRouter.delegate(),
-      routeInformationParser: appRouter.defaultRouteParser(),
+      routerDelegate: ref.read(appRouterProvider).delegate(),
+      routeInformationParser: ref.read(appRouterProvider).defaultRouteParser(),
     );
   }
 }
