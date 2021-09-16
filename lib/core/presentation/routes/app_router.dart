@@ -7,10 +7,10 @@ import 'package:bottom_menu_navigation/search/presentation/search_page.dart';
 
 @MaterialAutoRouter(
   routes: [
-    MaterialRoute(page: FeedPage, initial: true, path: '/feedpage'),
+    MaterialRoute(page: FeedPage, initial: true, path: '/feed'),
     MaterialRoute(page: MessagesPage, path: '/messages'),
-    MaterialRoute(page: BuyPage, path: '/messages'),
-    MaterialRoute(page: ProfilePage, path: '/starred'),
+    MaterialRoute(page: BuyPage, path: '/buy'),
+    MaterialRoute(page: ProfilePage, path: '/profile'),
     MaterialRoute(page: SearchPage, path: '/search'),
   ],
   replaceInRouteName: 'Page,Route',

@@ -12,9 +12,9 @@ class BottomBar extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final bool isDarkTheme = true;
-    //ref.read(pageStateNotifierProvider.notifier).pageState ==
-    //  const PageState.feedPage();
+    final bool isDarkTheme =
+        ref.read(pageStateNotifierProvider.notifier).pageState ==
+            const PageState.feedPage();
 
     final int menuIndex = 0;
 

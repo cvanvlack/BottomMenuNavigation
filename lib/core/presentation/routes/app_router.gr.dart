@@ -49,17 +49,17 @@ class AppRouter extends _i1.RootStackRouter {
   @override
   List<_i1.RouteConfig> get routes => [
         _i1.RouteConfig('/#redirect',
-            path: '/', redirectTo: '/feedpage', fullMatch: true),
-        _i1.RouteConfig(FeedRoute.name, path: '/feedpage'),
+            path: '/', redirectTo: '/feed', fullMatch: true),
+        _i1.RouteConfig(FeedRoute.name, path: '/feed'),
         _i1.RouteConfig(MessagesRoute.name, path: '/messages'),
-        _i1.RouteConfig(BuyRoute.name, path: '/messages'),
-        _i1.RouteConfig(ProfileRoute.name, path: '/starred'),
+        _i1.RouteConfig(BuyRoute.name, path: '/buy'),
+        _i1.RouteConfig(ProfileRoute.name, path: '/profile'),
         _i1.RouteConfig(SearchRoute.name, path: '/search')
       ];
 }
 
 class FeedRoute extends _i1.PageRouteInfo {
-  const FeedRoute() : super(name, path: '/feedpage');
+  const FeedRoute() : super(name, path: '/feed');
 
   static const String name = 'FeedRoute';
 }
@@ -71,13 +71,13 @@ class MessagesRoute extends _i1.PageRouteInfo {
 }
 
 class BuyRoute extends _i1.PageRouteInfo {
-  const BuyRoute() : super(name, path: '/messages');
+  const BuyRoute() : super(name, path: '/buy');
 
   static const String name = 'BuyRoute';
 }
 
 class ProfileRoute extends _i1.PageRouteInfo {
-  const ProfileRoute() : super(name, path: '/starred');
+  const ProfileRoute() : super(name, path: '/profile');
 
   static const String name = 'ProfileRoute';
 }
