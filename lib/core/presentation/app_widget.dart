@@ -1,5 +1,4 @@
 import 'package:bottom_menu_navigation/core/application/page_notifier.dart';
-import 'package:bottom_menu_navigation/core/presentation/routes/app_router.gr.dart';
 import 'package:bottom_menu_navigation/core/shared/providers.dart';
 import 'package:dartz/dartz.dart';
 import 'package:flutter/material.dart';
