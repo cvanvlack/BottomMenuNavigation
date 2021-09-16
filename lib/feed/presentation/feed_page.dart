@@ -9,11 +9,13 @@ class FeedPage extends StatelessWidget {
     return const Scaffold(
       bottomNavigationBar: BottomBar(),
       backgroundColor: Colors.black,
-      body: Text(
-        'Feed Page',
-        style: TextStyle(
-          color: Colors.white,
-          fontSize: 60,
+      body: Center(
+        child: Text(
+          'Feed Page',
+          style: TextStyle(
+            color: Colors.white,
+            fontSize: 60,
+          ),
         ),
       ),
     );

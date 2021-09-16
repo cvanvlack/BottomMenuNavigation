@@ -1,5 +1,5 @@
 import 'package:bottom_menu_navigation/core/application/page_notifier.dart';
-import 'package:bottom_menu_navigation/core/application/theme_notifier.dart';
+
 import 'package:bottom_menu_navigation/core/presentation/routes/app_router.gr.dart';
 import 'package:bottom_menu_navigation/core/shared/providers.dart';
 import 'package:flutter/material.dart';
@@ -12,9 +12,10 @@ class BottomBar extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final bool isDarkTheme =
-        ref.read(themeStateNotifierProvider.notifier).themeState ==
-            const ThemeState.dark();
+    final bool isDarkTheme = true;
+    //ref.read(pageStateNotifierProvider.notifier).pageState ==
+    //  const PageState.feedPage();
+
     final int menuIndex = 0;
 
     return BottomNavigationBar(

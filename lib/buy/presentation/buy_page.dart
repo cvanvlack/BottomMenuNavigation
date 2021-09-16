@@ -8,12 +8,14 @@ class BuyPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return const Scaffold(
       bottomNavigationBar: BottomBar(),
-      backgroundColor: Colors.black,
-      body: Text(
-        'Buy',
-        style: TextStyle(
-          color: Colors.white,
-          fontSize: 60,
+      backgroundColor: Colors.white,
+      body: Center(
+        child: Text(
+          'Buy',
+          style: TextStyle(
+            color: Colors.black,
+            fontSize: 60,
+          ),
         ),
       ),
     );
