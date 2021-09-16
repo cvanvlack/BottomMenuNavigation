@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.bottom_menu_navigation">
+    package="com.bottom_menu_navigation">
    <application
         android:label="bottom_menu_navigation"
         android:icon="@mipmap/ic_launcher">
